@@ -39,7 +39,6 @@
         android:hint="00"
         android:textColor="#ffffff"
         android:inputType="number"
-        android:background="@drawable/background"
         android:textSize="30dp"
         android:textStyle="bold" />
 
@@ -75,7 +74,6 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_below="@+id/smvTV"
-            android:background="@drawable/background"
             android:gravity="center"
             android:hint="0.00"
             android:textColor="#ffffff"
@@ -117,7 +115,6 @@
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_below="@+id/man_powerTV"
-            android:background="@drawable/background"
             android:gravity="center"
             android:textColor="#ffffff"
             android:hint="00"
@@ -159,7 +156,6 @@
             android:layout_height="60dp"
             android:layout_below="@+id/work_hourTV"
             android:layout_marginLeft="65dp"
-            android:background="@drawable/background"
             android:gravity="center"
             android:hint="0.00"
             android:textColor="#ffffff"
