@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+    <TextView
+        android:id="@+id/total_productionTV"
+        android:layout_width="235dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#534f4f"
+        android:text="T.Production"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/total_productionET"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_below="@id/total_productionTV"
+        android:layout_marginLeft="65dp"
+        android:textColorHint="#ffffff"
+        android:hint="00"
+        android:inputType="number"
+        android:background="@drawable/background"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_below="@+id/total_productionET"
+            android:background="#ffffff"
+            android:layout_height="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/smv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tp">
+
+    <TextView
+        android:id="@+id/smvTV"
+        android:layout_width="235dp"
+        android:background="#534f4f"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="SMV"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/smvET"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/smvTV"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textColorHint="#ffffff"
+            android:layout_marginLeft="65dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_below="@+id/smvET"
+            android:background="#ffffff"
+            android:layout_height="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/smv">
+
+        <TextView
+            android:id="@+id/man_powerTV"
+            android:layout_width="235dp"
+            android:background="#534f4f"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Man Power"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/man_powerET"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/man_powerTV"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:hint="00"
+            android:inputType="numberDecimal"
+            android:textColorHint="#ffffff"
+            android:layout_marginLeft="65dp"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="245dp"
+            android:layout_below="@+id/man_powerET"
+            android:background="#ffffff"
+            android:layout_height="3dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/work_hourTV"
+            android:layout_width="235dp"
+            android:layout_height="40dp"
+            android:background="#534f4f"
+            android:gravity="center"
+            android:text="Work Hour"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/work_hourET"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/work_hourTV"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textColorHint="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/work_hourET"
+            android:background="#ffffff" />
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/man_powerTV"-->
+        <!--android:layout_width="235dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_above="@+id/man_powerET"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Man Power"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/man_powerET"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="233dp"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="0.00"-->
+        <!--android:inputType="number"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/work_hourTV"-->
+        <!--android:layout_width="235dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="168dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Work Hour"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/work_hourET"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="13dp"-->
+        <!--android:layout_below="@+id/work_hourTV"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="156dp"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="0.00"-->
+        <!--android:inputType="numberDecimal"-->
+        <!--android:textSize="30dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/efficiencyTV"
+        android:layout_width="290dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:layout_below="@+id/wh"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="43dp"
+        android:textColorHint="#000"
+        android:background="#ffffff"
+        android:onClick="efficiency"
+        android:hint="EFFICINCY"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
