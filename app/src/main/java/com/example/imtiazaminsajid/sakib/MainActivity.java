@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             Float work_hourV = Float.valueOf(workHour.getText().toString());
             Float smvV = Float.valueOf(smv.getText().toString());
 
-            Float efficiencyResult = ((total_productionV*smvV)/(man_PowerV*work_hourV*60))*100;
+            Float efficiencyResult = ((total_productionV*smvV)/(man_PowerV*work_hourV))*100;
 
             efficency.setText(efficiencyResult+"%");
 
